@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Button from './Button'
 
 export const PokemonCard = ({
   id,
@@ -70,14 +71,13 @@ export const PokemonCard = ({
               value={evolutionInput}
             />
           </label>
-          <button
-            onClick={() =>
-              createPokemon ? setCreatePokemon(false) : setEditPokemon(false)
-            }
-          >
-            Cancela
-          </button>
-          <button onClick={handleChangePokemon}>Confirma</button>
+       
+      
+             <Button   onClick={() => createPokemon ? setCreatePokemon(false) : setEditPokemon(false)}
+              primary={false}
+               label="Cancelar" />
+             <Button  onClick={handleChangePokemon} primary={true} 
+             label="Confirmar" />
         </div>
       ) : (
         <>

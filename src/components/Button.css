@@ -1,0 +1,31 @@
+
+.storybook-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .storybook-button--primary {
+    background-color: #1ea7fd;
+    color: white;
+  }
+  
+  .storybook-button--secondary {
+    background-color: #b62e00;
+    color: #f1f1f1;
+  }
+  
+  .storybook-button--small {
+    font-size: 12px;
+  }
+  
+  .storybook-button--medium {
+    font-size: 14px;
+  }
+  
+  .storybook-button--large {
+    font-size: 16px;
+  }
+  
